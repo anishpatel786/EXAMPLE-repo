@@ -1,0 +1,360 @@
+/*--------------------------------------------------------------*/
+/*Basic setup*/
+/*--------------------------------------------------------------*/
+::selection{
+    background: #e67e22;
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    background: #fff;
+    color:#555;
+    font-family: 'lato';
+    font-size: 20px;
+    font-weight: 200px;
+    text-rendering: optimizeLegibility;
+    
+}
+.row{
+    max-width:1140px;
+    margin:0 auto;
+   
+}
+/*--------------------------------------------------------------*/
+/*header section*/
+/*--------------------------------------------------------------*/
+h1{
+    margin: 0px 0px;
+    color:white;
+    font-size: 290%;
+    text-transform: uppercase;
+    
+}
+
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height:100vh;
+    width:100vw;
+}
+
+.hero-text-box{
+    position:absolute;
+    width:1140px;
+    top:50% ;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.logo{
+    height:100px;
+    width:auto;
+    float:left;
+    margin-top:40px;
+    margin-left:100px;
+}
+.main-nav{
+    float:right;
+    list-style: none;
+}
+.main-nav li{
+    display:inline-block;
+    margin-left: 40px;
+    margin-top:55px;
+}
+.main-nav li a{
+  
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding:8px 0;
+    color:#fff;
+    text-decoration: none;
+    text-transform:uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition:0.3s;
+}
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #e67e22;
+}
+/*--------------------------------------------------------------*/
+/*Basic btn*/
+/*--------------------------------------------------------------*/
+.btn:link,
+.btn:visited{
+    display:inline-block;
+    padding:10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    color:#fff;
+    border-radius: 200px;
+    transition: background-color 0.3s;
+    
+}
+.btn:hover,
+.btn:active{
+    background: #cf6d17;
+}
+
+.btn-full:link,
+.btn-full:visited{
+    background:#e67e22;
+    border:1px solid #e67e22;
+
+}
+.btn-ghost{
+    color:#e67e22;
+    border:1px solid #e67e22;
+}
+/*
+.span_1_of_4 {
+	width: 23.8%;
+    display: flex;
+}*/
+
+
+.span_1_of_4 {
+	width: 23.8%; 
+}
+
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+/*
+@media only screen and (max-width: 480px) {
+	.span_4_of_4 {
+		width: 100%; 
+	}
+	.span_3_of_4 {
+		width: 100%; 
+	}
+	.span_2_of_4 {
+		width: 100%; 
+	}
+	.span_1_of_4 {
+		width: 100%; 
+	}
+}
+*/
+#main{
+    display: flex;
+}
+section {
+    padding:80px 0 ;
+}
+h2{
+    font-weight:300;
+    text-transform: uppercase;
+    letter-spacing:1px;
+    font-size:150%;
+    word-spacing:2px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+h2:after{
+    content:"";
+    display: block;
+    height:2px;
+    width:20vw;
+    margin:0 auto;
+    margin-top:20px;
+    background-color: #e67e22;
+}
+/*----------------------------*/
+/*paragraph*/
+/*----------------------------*/
+.long-copy{
+    line-height: 145%;
+    width:65%;
+    margin-left:20%;
+    margin-bottom:20px;
+}
+h3{
+    font-size:110%;
+    margin-bottom: 20px;
+}
+.box{
+    padding:1%;
+}
+.box p{
+    font-size:90%;
+    line-height:145%;
+    line-height: 25px;
+}
+.box img{
+    color:#e67e22;
+    display:block;
+    width:70px;
+    filter: drop-shadow(30px);
+    color:red;
+}
+/*--------------------meals showcase--------*/
+.main{
+    width:100vw;
+    list-style: none;
+    display: block;
+    
+     padding:0;
+}
+.main li{
+    display: block;
+    width: 25vw;
+    height:35%;
+    float: left;
+   overflow:hidden; 
+}
+.main li img{
+    opacity:0.8;
+    width:100%;
+    transform: scale(1.15);
+     transition:0.5s;
+}
+.main li img:hover{
+    opacity:1;
+    transform: scale(1);
+   
+}
+/*----------------space---------*/
+.space{
+    display: block;
+    width:100%;
+    height:40%;
+    background: red;
+}
+/*-----------------app---------*/
+.app{
+    padding-top:20px;
+    margin-top: 20px;
+    position: relative;
+}
+.img-image img{
+    position: absolute;
+    height:60vh;
+    width:30%;
+    display: block;
+    padding-left: 200px;
+
+}
+.steps{
+    position: absolute;
+    left:700;
+    width:60vh;
+    display: block;
+}
+.steps span{
+    border:3px #e67e22 solid;
+    border-radius: 50%;
+    margin-bottom:20px ;
+    padding:10px;
+    display: inline;
+    
+}
+.steps p{
+    display: inline-block;
+    margin-left:50px;
+
+}
+.app-store img{
+    margin:25px;
+}
+
+.cities-available {
+    margin-top: 400px;
+    margin-left:20px;
+    
+}
+.one img{
+    width:200px;
+}
+/*----------------------flex----------------------*/
+.flex{
+    display:flex;
+}
+.flex div{
+    width:300px;
+    margin:50px;
+}
+.flex div p{
+    display: block;
+}
+
+.customers-point-view {
+    background: linear-gradient(rgba(0,0,0,0.8),#000),url('back-customers.jpg');
+    display: flex;
+    background-size: cover;
+    color:white;
+    padding:12px;
+}
+.customers-point-view cite img{
+    display: block;
+    width:50px;
+    height:50px;
+    border-radius: 20px;
+}
+blockquote::before{
+    content:'\201c';
+    font-size: 400%;
+    display: block;
+    position: absolute;
+    top:-35px;
+}
+.customers-point-view blockquote{
+    margin:50px;
+    width:25%;
+    position: relative;
+}
+.customers-point-view blockquote p{
+    float: left;
+    display: inline-block;
+}
+/*---------------pricing------------*/
+.price{
+    background-color: #f5f5f5;
+}
+.row{
+    display: flex;
+    
+}
+h3{
+    text-align: center;
+    text-transform: uppercase;
+}
+.plan-box{
+    border: 1px white;
+    box-shadow: 5px 5px 5px 5px #e67e22;
+    margin:30px;
+    padding:20px;
+    background: #fff;
+    border-radius: 5px;
+    width:90%;
+    margin-left:10%;
+    transition:0.3s ease;
+    margin-left:80px;
+}
+.plan-box:hover{
+    box-shadow: 0 0;
+    mergin-left:2px;
+    border: 1px solid #e22e67;
+    border-radius: 2px 2px #e22e67;
+    color:#e22e67;
+}
+.plan-box div{
+/*    font-size:150%;*/
+}
+.no {
+    list-style: none;
+}
+span{
+    font-size:3vw;
+    color:#e67e22;
+}
+.paln-price-meal{
+    font-size:13px;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
